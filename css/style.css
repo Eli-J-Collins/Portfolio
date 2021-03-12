@@ -14,6 +14,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
+  
   a, a:hover {
     text-decoration: none !important; }
 
@@ -133,7 +134,7 @@ aside {
         top: 0;
         bottom: 0;
         width: 0px;
-        background-color: #ff7315;
+        background: #000;
         opacity: 0;
         visibility: hidden;
         -webkit-transition: .3s opacity ease, .3s visibility ease, .3s width ease;
@@ -142,7 +143,9 @@ aside {
       aside .side-inner .nav-menu ul li a:active, aside .side-inner .nav-menu ul li a:focus, aside .side-inner .nav-menu ul li a:hover {
         outline: none; }
       aside .side-inner .nav-menu ul li a:hover {
-        background: #fcfcfc;
+        background: linear-gradient(-45deg, #4E0BD3, #7B2CBF, #E0AAFF, #F799F1);
+        background-size: 400% 400%;
+        animation: gradient 7s ease infinite;
         color: #000; }
         aside .side-inner .nav-menu ul li a:hover:before {
           width: 4px;
