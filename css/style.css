@@ -4,6 +4,11 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ @font-face{
+  font-family: headerFont;
+  src: url(XtrudeRegular-ow3e4.ttf);
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -83,6 +88,11 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem; 
+}
+div#content > p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 125%;
 }
 
 abbr[title],
@@ -368,7 +378,12 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 2.5rem; 
 }
-
+h2#contentHeaderTitle{
+  text-align: center;
+}
+h2{
+  font-family: headerFont !important;
+}
 h2, .h2 {
   font-size: 2rem; 
 }
@@ -2546,13 +2561,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff; 
+  background-color: #3C096C;
+  border-color: #3C096C; 
 }
   .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc; 
+    background-color: #E0AAFF;
+    border-color: #E0AAFF; 
   }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
@@ -2560,14 +2575,14 @@ fieldset:disabled a.btn {
   }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff; 
+    background-color: #3C096C;
+    border-color: #3C096C; 
   }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0062cc;
-    border-color: #005cbf; 
+    background-color: #E0AAFF;
+    border-color: #E0AAFF; 
   }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
@@ -4270,6 +4285,7 @@ input[type="button"].btn-block {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; 
+  margin-left: 0;
 }
 
 .navbar-toggler {
@@ -10304,7 +10320,7 @@ h1, h2, h3, h4, h5,
     font-size: 16px; 
   }
     #sidebar ul li > ul {
-      margin-left: 10px; 
+      margin-left: 0px; 
     }
       #sidebar ul li > ul li {
         font-size: 14px; 
@@ -10379,7 +10395,7 @@ h1, h2, h3, h4, h5,
       } 
       }
     #sidebar .custom-menu .btn.btn-primary {
-      background: #2f89fc;
+      background: #3C096C;
       border-color: transparent;
       position: relative;
       color: #000;
@@ -10436,7 +10452,7 @@ a[data-toggle="collapse"] {
   display: block;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 15px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); 
@@ -10458,12 +10474,16 @@ a[data-toggle="collapse"] {
 }
 
 .btn.btn-primary {
-  background: #2f89fc;
-  border-color: #2f89fc; 
+  background: #240046;
+  border-color: #240046; 
 }
-  .btn.btn-primary:hover, .btn.btn-primary:focus {
-    background: #2f89fc !important;
-    border-color: #2f89fc !important; 
+.btn.btn-primary:focus {
+  background: #240046 !important;
+  border-color: #240046 !important; 
+}
+  .btn.btn-primary:hover {
+    background: #E0AAFF !important;
+    border-color: #E0AAFF !important; 
   }
 
 .footer p {
